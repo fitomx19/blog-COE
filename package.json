@@ -1,0 +1,30 @@
+{
+    "name": "Test",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "nodemon app.js",
+      "start": "node app.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "@fortawesome/fontawesome-free": "^5.13.1",
+      "body-parser": "^1.19.0",
+      "bootstrap": "^4.5.0",
+      "dotenv": "^8.2.0",
+      "ejs": "^2.5.9",
+      "express": "^4.17.1",
+      "jquery": "^3.5.1",
+      "mongoose": "^5.9.22",
+      "morgan": "^1.10.0",
+      "path": "^0.12.7",
+      "popper.js": "^1.16.1"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.4"
+    }
+  }
