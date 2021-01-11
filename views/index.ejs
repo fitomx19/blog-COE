@@ -19,6 +19,38 @@
     background: #aaa;
   }
   </style>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawBarColors);
+
+function drawBarColors() {
+      var data = google.visualization.arrayToDataTable([
+        ['Personas', 'Porcentaje de poblacion encuestada'],
+        ['Administrar la seguridad de sus casas', 61],
+        ['Automatizar dispositivos en el hogar', 59],
+        ['Pagar facturas', 55],
+        ['Buscar que los ayuden a realizar reservas en restaurantes', 53],
+        ['Facilitar el acceso a servicios médicos como consultas', 52]
+      ]);
+
+      var options = {
+        title: 'Uso de el asistente de voz',
+        chartArea: {width: '50%'},
+        colors: ['#b0120a', '#ffab91'],
+        hAxis: {
+          title: 'Porcentaje de poblacion encuestada',
+          minValue: 0
+        },
+        vAxis: {
+          title: 'Tipo de Uso'
+        }
+      };
+      var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+</script>
 </head>
 <body>
 
@@ -31,7 +63,7 @@
           <div class="d-flex h-100 text-center align-items-center">
             <div class="w-100 text-white">
               <h1 class="display-3 animate__animated animate__fadeIn">Procesamiento <strong>Lenguaje Natural</strong></h1>
-              <p class="lead mb-0 animate__animated animate__fadeIn animate__delay-1s" >Todo lo que necesitas saber.</p>
+              <p class="lead mb-0 animate__animated animate__fadeIn animate__delay-1s" >El blog para entender el PLN.</p>
             </div>
           </div>
         </div>
@@ -46,7 +78,7 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">Acerca de </a>
+        <a class="nav-link" href="/nosotros">Acerca de </a>
       </li>
        
     </ul>
@@ -60,36 +92,83 @@
         <div class="card-deck text-center mb-3">
             <div class="container">
               <div class="card shadow mb-4">
-                <h2>Acerca de Nosotros</h2>
-                <h6>Equipo de trabajo para la Materia de COE de la Maestra () </h6>
-                <div><img class="responsive" src="https://www.escom.ipn.mx/images/logoESCOM2x.png"></div>
-                <p><strong>Integrado por :  </strong></p>
-                <p>Guerrero Paisano Jesedh</p>
-                <p>Huerta Ramírez Michael Adolfo</p>
-                <p> Sainz Takata Juan Pablo Minoru</p>
+                <div class="container">
+                  <h2>¿Quienes somos?</h2>
+                  <h6 style="text-align: justify;">Somos un equipo de  estudiantes de LCD  formado para la Materia de COE de la Maestra  ANA MARIA WINFIELD REYES </h6>
+                  <div><img class="responsive" src="https://www.escom.ipn.mx/images/logoESCOM2x.png"></div>
+                  <p><strong>Integrado por:  </strong></p>
+                  <p style="text-align: left;">Guerrero Paisano Jesedh</p>
+                  <p style="text-align: left;">Huerta Ramírez Michael Adolfo</p>
+                  <p style="text-align: left;">Sainz Takata Juan Pablo Minoru</p>
+                </div>
             </div>
             </div>
         </div>
         <div class="card-deck text-center mb-3">
             <div class="card shadow mb-4" >
-      <h3>Post más recientes</h3>
+      <h3>Post más populares</h3>
       <ul class="nav nav-pills flex-column">
         <li class="nav-item">
           <a class="nav-link active" href="/post1">¿Que es el Procesamiento le Lenguaje Natural?</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Entrevista con un Experto en Data Science</a>
+          <a class="nav-link" href="/post2">¿Para qué sirve el PLN y sus beneficios?</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Inconvenientes de la Data Science</a>
+          <a class="nav-link" href="/post5">La ciencia de datos aplicada al mejoramiento del lenguaje natural</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+          <a class="nav-link " href="/post3">¿Cómo se afectan entre sí la Inteligencia Artificial y el Procesamiento del Lenguaje Natural?</a>
         </li>
       </ul>
       <hr class="d-sm-none">
             </div>
         </div>
+
+        <div>
+          
+            <div class="card-deck text-center mb-3">
+            <div class="card shadow mb-4" >
+              <div class="container">
+            <h3>Videos Recomendados!</h3>
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/cTQiN9dewIg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div></div>
+          </div>
+        </div>
+
+        
+        <div>
+          
+          <div class="card-deck text-center mb-3">
+          <div class="card shadow mb-4" >
+            <div class="container">
+          <h3>Podcast  Recomendado</h3>
+          <iframe src="https://open.spotify.com/embed-podcast/episode/4ewwwMozFTMTqI53gtkkQc" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div></div>
+        </div>
+
+        <div class="card-deck text-center mb-3">
+          <div class="card shadow mb-4" >
+            <div class="container">
+          <h3>¿Para que usan los mexicanos el Asistente de voz?</h3>
+          
+          <div id="chart_div"></div>
+          <h6>Fuente: <a href="https://cio.com.mx/el-50-de-los-encuestados-mexicanos-ya-usan-un-asistente-digital-accenture/">CIO</a></h6>
+            </div></div>
+        </div>
+
+      </div>
+        
+        <div>
+          
+          <div class="card-deck text-center mb-3">
+          <div class="card shadow mb-4" >
+            <div class="container">
+          <h3>10 preguntas a una  Cientifica de Datos!</h3>
+          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/cTQiN9dewIg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div></div>
+        </div>
+      </div>
     </div>
     <div class="col-sm-8">  
         <div class="card-deck text-center mb-3">
@@ -110,7 +189,7 @@
       <div class="card-deck text-center mb-3">
         <div class="card shadow mb-4">
 <div class="container">
-      <h2>¿Para qué sirve el PLN?</h2>
+      <h2>¿Para qué sirve el PLN y sus beneficios?</h2>
       <h5>Campos de Aplicacion, 9 Enero , 2021</h5>
       <div><img src="https://i1.wp.com/prometeusgs.com/wp-content/uploads/2019/02/Procesamiento-lenguaje-natural.jpg?fit=1024%2C512&ssl=1" class="img img-fluid"/></div>
       <p>El procesamiento del lenguaje natural (PLN o NLP), se utiliza actualmente en diferentes áreas y para distintas funciones, como por ejemplo:</p>
@@ -139,13 +218,25 @@
         </div>
           </div>
             </div>
+            <div class="card-deck text-center mb-3">
+              <div class="card shadow mb-4">
+            <div class="container">
+            <h2>La ciencia de datos aplicada al mejoramiento del lenguaje natural            </h2>
+            <h5>Breve introduccion, 10 Enero , 2021</h5>
+            <div><img src="https://4.bp.blogspot.com/-_LBXxkkNZbE/WSCz24PcpNI/AAAAAAAABso/5cawHpekINYsMsBoKifVZ_BRwSogfYkBACLcB/s750/procesamiento_dato.jpg" class="img img-fluid"/></div>
+            <p>¿Cómo usamos un algoritmo de ML para generar un PLC más preciso? y ¿Cuáles son los desafíos del PLC?  </p>
+            <a href="/post5">Leer más</a>
+              </div>
+                </div>
+                  </div>
+                  
     </div>
   </div>
 </div>
 
 
 <div class="jumbotron text-center" style="margin-bottom:0">
-  <p>Footer</p>
+  <p>Copyright 2021</p>
 </div>
 
 </body>

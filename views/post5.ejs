@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Blog Post</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/css.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Custom styles for this template -->
+  <link href="css/blog-post.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">Procesamiento Lenguaje Natural</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Inicio
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/nosotros">Acerca de</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Post Content Column -->
+      <div class="col-lg-8">
+
+        <!-- Title -->
+        <h1 class="mt-4">La ciencia de datos aplicada al mejoramiento del lenguaje natural
+        </h1>
+        <h6>Tiempo lectura: 20 minutos, lo mismo que un episodio de anime</h6>
+
+        <!-- Author -->
+        <p class="lead">
+          por
+          <a href="#">Adolfo, Jesedh, Minoru </a>
+        </p>
+
+        <hr>
+
+        <!-- Date/Time -->
+        <p>Subido el 10 de Enero 2021 </p>
+
+        <hr>
+
+        <!-- Preview Image -->
+        <img class="img-fluid rounded" src="https://programaenlinea.net/wp-content/uploads/2020/01/procesamiento-de-lenguaje-natural-PNL.jpg" alt="">
+
+        <hr>
+
+        <!-- Post Content -->
+        <h3>¿Qué es la Ciencia de Datos?[8]</h3>
+        <p  style="text-align: justify;" class="lead">
+            Esta es una definición simple de ciencia de datos:
+            La ciencia de datos combina múltiples campos que incluyen estadísticas, métodos científicos y análisis de datos para extraer el valor de los datos.
+            Los practicantes de la ciencia de datos se llaman científicos de datos y combinan una variedad de conocimientos para analizar los datos recopilados de la web, de teléfonos inteligentes, de clientes, sensores y otras fuentes.
+            </p>
+
+            <img  class="img-fluid" src="https://startpoint.cise.es/wp-content/uploads/2018/10/CIENCIA-DE-DATOS-Startpoint-Info.jpg" >
+        <h3 >¿Que es el machine Learning?</h3>
+        <p style="text-align: justify;" class="lead">Machine Learning es una disciplina científica del ámbito de la Inteligencia Artificial que crea sistemas que aprenden automáticamente. Aprender en este contexto quiere decir identificar patrones complejos en millones de datos. La máquina que realmente aprende es un algoritmo que revisa los datos y es capaz de predecir comportamientos futuros. Automáticamente, también en este contexto, implica que estos sistemas se mejoran de forma autónoma con el tiempo, sin intervención humana.[</p>
+        <img  class="img-fluid" src="https://i.pinimg.com/originals/e4/1d/d7/e41dd750c2d1fcd6469abfa88df00459.jpg" >
+        
+        <h3>¿Cómo usamos un algoritmo de ML para generar un PLC más preciso?[6,7]</h3>
+        <p style="text-align: justify;" class="lead">Para poder crear un sistema de PLC eficiente  deberemos armar diversos modelos con el lenguaje, crear estructuras y con ellas alimentar algoritmos de Machine Learning:
+            Podemos empezar por ejemplo tomando un texto extenso. Utilizaremos Expresiones Regulares para subdividir el texto en palabras. Podemos contar las palabras, su frecuencia. Si hay algún patrón, por ejemplo si siempre después de una palabra X, siempre viene una palabra Y. Podemos analizar cómo terminan las palabras, por ejemplo “verbos terminados en “ar, er, ir” y descubrir la raíz de la palabra. Podríamos agrupar palabras con significados similares en contraposición a su palabras antónimas.
+            Resumiendo, podemos procesar de diversas maneras al lenguaje, sus componentes: gramática, sintaxis e intentar crear estructuras de apoyo que nos servirán como entradas para aplicar Regresión Lineal, Regresión Logística, Naive Bayes, árbol de decisión o Redes Neuronales según el resultado que estemos buscando.
+        </p>
+
+        <h3>¿Cuáles son los desafíos del PLC?[2,7]</h3>
+        <p style="text-align: justify;">Existen dos retos a vencer en el procesamiento del lenguaje natural: la variación y la ambigüedad lingüísticas.
+            El lenguaje natural, entendido como la herramienta que utilizan las personas para expresarse, posee propiedades que merman la efectividad de los sistemas de recuperación de información textual. Estas propiedades son la variación y la ambigüedad lingüística. Cuando hablamos de la variación lingüística nos referimos a la posibilidad de utilizar diferentes palabras o expresiones para comunicar una misma idea. En cambio, la ambigüedad lingüística se produce cuando una palabra o frase permite más de una interpretación.
+            
+            Ambos fenómenos inciden en el proceso de recuperación de información aunque de forma distinta. La variación lingüística provoca el silencio documental, es decir la omisión de documentos relevantes para cubrir la necesidad de información, ya que no se han utilizado los mismos términos que aparecen en el documento. En cambio, la ambigüedad implica el ruido documental, es decir la inclusión de documentos que no son significativos, ya que se recuperan también documentos que utilizan el término pero con significado diferente al requerido. Estas dos características dificultan considerablemente el tratamiento automatizado del lenguaje. A continuación se muestran algunos ejemplos que ilustran la repercusión de estos fenómenos en el proceso de recuperación de información:
+            
+            A nivel morfológico una misma palabra puede adoptar diferentes roles morfo-sintácticos en función del contexto en el que aparece, ocasionando problemas de ambigüedad (ejemplo 1).
+            
+            Ejemplo 1. Deja la comida que está sobre la mesa de la cocina, dijo llevando el sobre en la mano.
+            
+            La palabra sobre es ambigua morfológicamente ya que puede ser un sustantivo masculino singular, una preposición, y también la primera o tercera persona del presente de subjuntivo del verbo sobrar.
+            
+            A nivel sintáctico , centrado en el estudio de las relaciones establecidas entre las palabras para formar unidades superiores, sintagmas y frases, se produce ambigüedad a consecuencia de la posibilidad de asociar a una frase más de una estructura sintáctica. Por otro lado, esta variación supone la posibilidad de expresar lo mismo pero cambiando el orden de la estructura sintáctica de la frase. (ejemplo 2).
+            
+            Ejemplo 2. María vio a un niño con un telescopio en la ventana.
+            
+            La interpretación de la dependencia de los dos sintagmas preposicionales, con un telescopio y en la ventana, otorga diferentes significados a la frase: (i) María vio a un niño que estaba en la ventana y que tenía un telescopio, (ii) María estaba en la ventana, desde donde vio a un niño que tenía un telescopio, y (iii) María estaba en la ventana, desde donde miraba con un telescopio, y vio a un niño.
+            </p>
+            
+            <h3>¿Cómo podemos resolver estos desafíos?</h3>
+            <p style="text-align: justify;">
+                A esta altura de la investigación nos hemos dado una idea que el proceso para poder enriquecer un algoritmo que procesa el texto para poder ser entendido por una máquina como si lenguaje natural se tratase es una tarea larga y que implica el campo de estudio de la lingüística que es enorme para mejorar su precisión, requerimos de algoritmos de Machine learning que constantemente hacen más robustos y precisos el entendimiento de la máquina, crear fuentes de información confiables e irse adaptando a la lengua moderna, a todos las variaciones lingüísticas para poder crear un sistema completo 
+            </p>
+
+            <h3>Conclusion</h3>
+            <p style="text-align: justify;">
+                Conclusión:
+                En esta etapa de la investigación, que tuvo como fin dar a conocer el estado actual del procesamiento del lenguaje natural y sus beneficios, que abarcan muchas oportunidades para que otras áreas aprovechen los avances que se hacen.
+                
+                A pesar de que el Procesamiento del Lenguaje Natural sea una disciplina de hace tiempo, se ha comprobado que está en pleno desarrollo y que tiene una multitud de retos a superar debido a la ambigüedad de lo que es el lenguaje natural.
+                También se definió de manera concisa los conceptos principales, desde que es y cómo se generó esta área; funcionamiento, como se analizan los datos de lenguaje natural; áreas de aplicación, como en la ciencia de datos o la inteligencia artificial; y técnicas asociadas a esta disciplina.
+                De todo lo dicho se deduce la necesidad de seguir trabajando para dilucidar nuevas técnicas o enfoques que ayuden a superar las deficiencias existentes. Solo así podremos llegar a la quimera que es hoy la comprensión automática del lenguaje natural.
+                </p>
+        <img  class="img-fluid" src="https://www.tecnohotelnews.com/wp-content/uploads/2017/10/infografia_inteligencia_artificial-1.jpg" >
+
+      
+
+        <blockquote class="blockquote">
+          <p style="text-align: justify;" class="mb-0">«Tan importante es educar a las nuevas generaciones que vienen como también creo que es importante enseñar a la fuerza laboral existente, para que puedan entender cómo hacer que la Inteligencia Artificial les sirva a ellos y a sus roles».</p>
+          <footer class="blockquote-footer">Sarah Aerni,
+            <cite title="Source Title"> ingenier y Directora de Machine Learning en Salesforce</cite>
+          </footer>
+        </blockquote>
+
+    
+        <small>2.-Patricia Pradas. (2019). Procesamiento del Lenguaje Natural (PLN o NLP): qué es y para qué se utiliza. 07/12/2020, de Decide Sitio web: https://decidesoluciones.es/procesamiento-del-lenguaje-natural-pln-o-nlp-que-es-y-para-que-se-utiliza/</small>
+        <br>
+        <small>6.-Mariani, Joseph; Francopoulo, Gil; Paroubek, Patrick (2019), «The NLP4NLP Corpus (I): 50 Years of Publication Collaboration and Citation in Speech and Language Processing», Frontiers in Research Metrics and Analytics</small>
+        <br>
+        <small> 7.-Mari Vallez y Rafael Pedraza-Jimenez. El Procesamiento del Lenguaje Natural en la Recuperación de Información Textual y áreas afines [en línea]. "Hipertext.net", núm. 5, 2007. http://www.hipertext.net</small>     
+        <br>
+        <small>  8.-Newman, J. A. (2017, 12 diciembre). ¿Qué es la ciencia de datos? | Oracle. Oracle Mexico. https://www.oracle.com/mx/data-science/what-is-data-science.html </small></small>
+
+        <hr>
+
+        <!-- Comments Form -->
+        <div class="card my-4">
+          <h5 class="card-header">Deja un comentario:</h5>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Single Comment -->
+        <div class="media mb-4">
+          <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+          <div class="media-body">
+            <h5 class="mt-0">Commenter Name</h5>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+          </div>
+        </div>
+        
+
+      </div>
+
+      <!-- Sidebar Widgets Column -->
+      <div class="col-md-4">
+
+        <!-- Search Widget -->
+        <div class="card my-4">
+          <h5 class="card-header">Buscar</h5>
+          <div class="card-body">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="En construccion...">
+              <span class="input-group-append">
+                <button class="btn btn-secondary" type="button">Ir!</button>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Categories Widget -->
+        <div class="card my-4">
+          <h5 class="card-header">Categorias</h5>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-6">
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#">Inteligencia Artificial</a>
+                  </li>
+                  <li>
+                    <a href="#">Lenguaje Natural</a>
+                  </li>
+                  <li>
+                    <a href="#">Ciencia de Datos</a>
+                  </li>
+                  <li>
+                    <a href="#">Procesamiento Datos</a>
+                  </li>
+                </ul>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+
+        
+
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Procesamiento Lenguaje Natural 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
