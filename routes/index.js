@@ -21,7 +21,7 @@ router.get("/", async (req, res) => {
     res.render("Post4");
   });
   router.get("/post5", async (req, res) => {
-    res.render("Post5");
+    res.render("Post0");
   });
 
   router.get("/nosotros", async (req, res) => {
